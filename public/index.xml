@@ -6,16 +6,16 @@
       <description>Last 10 notes on Modern Robot SW</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Welcome</title>
-    <link>https://quartz.jzhao.xyz/</link>
-    <guid>https://quartz.jzhao.xyz/</guid>
-    <description><![CDATA[ Modern Robot SW 이 곳은 Modern Robot SW 개발에 관한 내용을 다룹니다. 현재 로봇 개발은 실제 로봇 SW 뿐만이 아니라, 클라우드 로보틱스, Phyisical AI 등 다양한 분야를 다루고 있습니다. ]]></description>
-    <pubDate>Sun, 04 Jan 2026 04:31:19 GMT</pubDate>
-  </item><item>
     <title>Drawing-2026-01-03-13.02.00.excalidraw</title>
     <link>https://quartz.jzhao.xyz/Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw</link>
     <guid>https://quartz.jzhao.xyz/Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw</guid>
     <description><![CDATA[ ⚠ Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ]]></description>
+    <pubDate>Sun, 04 Jan 2026 04:41:31 GMT</pubDate>
+  </item><item>
+    <title>Welcome</title>
+    <link>https://quartz.jzhao.xyz/</link>
+    <guid>https://quartz.jzhao.xyz/</guid>
+    <description><![CDATA[ Modern Robot SW 이 곳은 Modern Robot SW 개발에 관한 내용을 다룹니다. 현재 로봇 개발은 실제 로봇 SW 뿐만이 아니라, 클라우드 로보틱스, Phyisical AI 등 다양한 분야를 다루고 있습니다. ]]></description>
     <pubDate>Sun, 04 Jan 2026 04:31:19 GMT</pubDate>
   </item><item>
     <title>들어가기 전에 -1</title>
@@ -42,16 +42,16 @@
     <description><![CDATA[ Elements of Robot 을 AI로 요약하고 개인적으로 정리해서 공유 하기 위해 정리된 페이지 입니다. ]]></description>
     <pubDate>Sat, 03 Jan 2026 07:44:13 GMT</pubDate>
   </item><item>
-    <title>Digital Twin</title>
-    <link>https://quartz.jzhao.xyz/modern-robot-sw/digitial-twin/Digital-Twin</link>
-    <guid>https://quartz.jzhao.xyz/modern-robot-sw/digitial-twin/Digital-Twin</guid>
-    <description><![CDATA[ 이 문서에서는 디지털 트윈을 다룬다. 왜 로봇에서 디지탈 트윈이 중요한지에 대한 백서. ]]></description>
-    <pubDate>Mon, 29 Dec 2025 09:03:22 GMT</pubDate>
-  </item><item>
     <title>Cloud Robotics 설계하기</title>
     <link>https://quartz.jzhao.xyz/modern-robot-sw/cloud-robotics/Cloud-Robotics-%EC%84%A4%EA%B3%84%ED%95%98%EA%B8%B0</link>
     <guid>https://quartz.jzhao.xyz/modern-robot-sw/cloud-robotics/Cloud-Robotics-%EC%84%A4%EA%B3%84%ED%95%98%EA%B8%B0</guid>
     <description><![CDATA[ 잘 들어 보라구. ]]></description>
+    <pubDate>Mon, 29 Dec 2025 09:03:22 GMT</pubDate>
+  </item><item>
+    <title>Digital Twin</title>
+    <link>https://quartz.jzhao.xyz/modern-robot-sw/digitial-twin/Digital-Twin</link>
+    <guid>https://quartz.jzhao.xyz/modern-robot-sw/digitial-twin/Digital-Twin</guid>
+    <description><![CDATA[ 이 문서에서는 디지털 트윈을 다룬다. 왜 로봇에서 디지탈 트윈이 중요한지에 대한 백서. ]]></description>
     <pubDate>Mon, 29 Dec 2025 09:03:22 GMT</pubDate>
   </item><item>
     <title>통합관제SW는 어떻게 만드는가</title>

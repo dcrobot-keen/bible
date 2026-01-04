@@ -37,12 +37,12 @@
             "id": "effde72794bd4784",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "image",
               "state": {
-                "file": "Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw.md"
+                "file": "Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw.light.svg"
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing-2026-01-03-13.02.00.excalidraw"
+              "icon": "lucide-image",
+              "title": "Drawing-2026-01-03-13.02.00.excalidraw.light"
             }
           }
         ],
@@ -211,13 +211,13 @@
   },
   "active": "effde72794bd4784",
   "lastOpenFiles": [
+    "Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw.dark.svg",
+    "Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw.md",
+    "Excalidraw/images/Gemini_Generated_Image_3udybt3udybt3udy.png",
     "modern-robot-sw/들어가기 전에 -1.md",
     "index.md",
     "modern-robot-sw/들어가기 전에 -2.md",
-    "Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw.md",
-    "Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw.dark.svg",
     "Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw.light.svg",
-    "Excalidraw/images/Gemini_Generated_Image_3udybt3udybt3udy.png",
     "Excalidraw/images/Gemini_Generated_Image_f3zuaxf3zuaxf3zu.png",
     "Excalidraw/images/Gemini_Generated_Image_c0v5qzc0v5qzc0v5.png",
     "Excalidraw/images/Gemini_Generated_Image_135hws135hws135h.png",
