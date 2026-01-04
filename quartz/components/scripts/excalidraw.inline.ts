@@ -309,6 +309,11 @@ document.addEventListener("nav", async () => {
       // Create container for SVG
       const container = document.createElement("div")
       container.className = "excalidraw-container"
+      container.style.display = "flex"
+      container.style.justifyContent = "center"
+      container.style.alignItems = "center"
+      container.style.maxWidth = "100%"
+      container.style.overflow = "auto"
 
       try {
         // Prepare elements and appState
@@ -348,9 +353,12 @@ document.addEventListener("nav", async () => {
 
           console.log("Canvas generated successfully")
 
-          // Add canvas to container
+          // Add canvas to container with responsive sizing
           canvas.style.maxWidth = "100%"
+          canvas.style.maxHeight = "80vh"
+          canvas.style.width = "auto"
           canvas.style.height = "auto"
+          canvas.style.objectFit = "contain"
           container.appendChild(canvas)
 
           console.log("Excalidraw diagram rendered successfully (canvas)")
@@ -372,7 +380,11 @@ document.addEventListener("nav", async () => {
 
           console.log("SVG generated successfully")
 
-          // Add SVG to container
+          // Add SVG to container with responsive sizing
+          svg.style.maxWidth = "100%"
+          svg.style.maxHeight = "80vh"
+          svg.style.width = "auto"
+          svg.style.height = "auto"
           container.appendChild(svg)
 
           console.log("Excalidraw diagram rendered successfully (SVG)")
