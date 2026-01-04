@@ -6,6 +6,12 @@
       <description>Last 10 notes on Modern Robot SW</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>들어가기 전에</title>
+    <link>https://dcrobot-keen.github.io/modern-robot-sw/modern-robot-sw/%EB%93%A4%EC%96%B4%EA%B0%80%EA%B8%B0-%EC%A0%84%EC%97%90</link>
+    <guid>https://dcrobot-keen.github.io/modern-robot-sw/modern-robot-sw/%EB%93%A4%EC%96%B4%EA%B0%80%EA%B8%B0-%EC%A0%84%EC%97%90</guid>
+    <description><![CDATA[ 로봇 산업의 영역은 매우 영역이 넓습니다. 산업용 로봇, 배달 로봇, 그리고 휴머노이드에 이르기 까지. 어떤 영역의 어떤 로봇이 관심이 있을지 모르지만, 현재 로봇 SW개발의 근간을 이루고 있는 기본 기술들을 이 블로그에서는 다루려고 하고 있습니다. ]]></description>
+    <pubDate>Sun, 04 Jan 2026 10:15:50 GMT</pubDate>
+  </item><item>
     <title>Drawing-2026-01-03-13.02.00.excalidraw</title>
     <link>https://dcrobot-keen.github.io/modern-robot-sw/Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw</link>
     <guid>https://dcrobot-keen.github.io/modern-robot-sw/Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw</guid>
@@ -16,12 +22,6 @@
     <link>https://dcrobot-keen.github.io/modern-robot-sw/</link>
     <guid>https://dcrobot-keen.github.io/modern-robot-sw/</guid>
     <description><![CDATA[ Modern Robot SW 이 곳은 Modern Robot SW 개발에 관한 내용을 다룹니다. 현재 로봇 개발은 실제 로봇 SW 뿐만이 아니라, 클라우드 로보틱스, Phyisical AI 등 다양한 분야를 다루고 있습니다. ]]></description>
-    <pubDate>Sun, 04 Jan 2026 04:31:19 GMT</pubDate>
-  </item><item>
-    <title>들어가기 전에</title>
-    <link>https://dcrobot-keen.github.io/modern-robot-sw/modern-robot-sw/%EB%93%A4%EC%96%B4%EA%B0%80%EA%B8%B0-%EC%A0%84%EC%97%90</link>
-    <guid>https://dcrobot-keen.github.io/modern-robot-sw/modern-robot-sw/%EB%93%A4%EC%96%B4%EA%B0%80%EA%B8%B0-%EC%A0%84%EC%97%90</guid>
-    <description><![CDATA[ 로봇 산업의 영역은 매우 영역이 넓습니다. 산업용 로봇, 배달 로봇, 그리고 휴머노이드에 이르기 까지. 어떤 영역의 어떤 로봇이 관심이 있을지 모르지만, 현재 로봇 SW개발의 근간을 이루고 있는 기본 기술들을 이 블로그에서는 다루려고 하고 있습니다. ]]></description>
     <pubDate>Sun, 04 Jan 2026 04:31:19 GMT</pubDate>
   </item><item>
     <title>1장- 로봇 공학 기초(작성중)</title>
