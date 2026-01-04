@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "modern-robot-sw/들어가기 전에.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "들어가기 전에"
             }
           }
         ],
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "modern-robot-sw/들어가기 전에.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for index"
+              "title": "Backlinks for 들어가기 전에"
             }
           },
           {
@@ -128,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
+                "file": "modern-robot-sw/들어가기 전에.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from index"
+              "title": "Outgoing links from 들어가기 전에"
             }
           },
           {
@@ -171,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md",
+                "file": "modern-robot-sw/들어가기 전에.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of index"
+              "title": "Outline of 들어가기 전에"
             }
           }
         ]
@@ -195,25 +195,27 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
   "active": "eb02c180f1346b32",
   "lastOpenFiles": [
-    "robot icon.png",
+    "Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw.md",
+    "Untitled.md",
     "modern-robot-sw/들어가기 전에.md",
+    "modern-robot-sw/slam/slam 은 어떻게 하는가.md",
+    "index.md",
+    "robot icon.png",
     "modern-robot-sw/element-of-robot/1장- 로봇 공학 기초(작성중).md",
     "Gemini_Generated_Image_f3zuaxf3zuaxf3zu.png",
     "Gemini_Generated_Image_c0v5qzc0v5qzc0v5.png",
     "Gemini_Generated_Image_3udybt3udybt3udy.png",
     "Gemini_Generated_Image_135hws135hws135h.png",
-    "Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw.md",
     "Excalidraw",
     "modern-robot-sw/humanoid/Humanoid.md",
-    "index.md",
     "modern-robot-sw/humanoid",
     "modern-robot-sw/ros/ROS 핥기.md",
-    "modern-robot-sw/slam/slam 은 어떻게 하는가.md",
     "modern-robot-sw/ros",
     "modern-robot-sw/cloud-robotics/Cloud Robotics 설계하기.md",
     "modern-robot-sw/cloud-robotics",
