@@ -17,6 +17,8 @@ export const Excalidraw: QuartzTransformerPlugin = () => {
             const slug = file.data.slug || ""
             const baseDir = pathToRoot(slug)
 
+            let firstExcalidrawImage: string | null = null
+
             // Look for text nodes containing ![[*.excalidraw]] pattern
             visit(tree, "text", (node: any, index, parent) => {
               const text = node.value as string
@@ -111,6 +113,52 @@ export const Excalidraw: QuartzTransformerPlugin = () => {
                         // Replace the text node with code node
                         parent.children[index] = codeNode as any
                       }
+
+                      // Set first excalidraw as social image if not already set
+                      if (!firstExcalidrawImage) {
+                        // Try to find PNG or SVG export of this excalidraw file
+                        // excalidrawMdPath is like "Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw.md"
+                        // baseName should be "Drawing-2026-01-03-13.02.00.excalidraw"
+                        const baseName = path.basename(excalidrawMdPath, ".md")
+                        const dirName = path.dirname(excalidrawFullPath)
+
+                        console.log(`Looking for exports of: ${excalidrawFullPath}`)
+                        console.log(`  Base name: ${baseName}`)
+                        console.log(`  Directory: ${dirName}`)
+
+                        const pngPath = path.join(dirName, `${baseName}.png`)
+                        const svgLightPath = path.join(dirName, `${baseName}.light.svg`)
+                        const svgPath = path.join(dirName, `${baseName}.svg`)
+
+                        if (fs.existsSync(pngPath)) {
+                          // PNG exists, use it as social image
+                          const relativePngPath = path
+                            .relative(contentDir, pngPath)
+                            .replace(/\\/g, "/")
+                          firstExcalidrawImage = relativePngPath
+                          console.log(`Using PNG for OG image: ${relativePngPath}`)
+                        } else if (fs.existsSync(svgLightPath)) {
+                          // SVG light theme exists, prefer it
+                          const relativeSvgPath = path
+                            .relative(contentDir, svgLightPath)
+                            .replace(/\\/g, "/")
+                          firstExcalidrawImage = relativeSvgPath
+                          console.log(`Using light SVG for OG image: ${relativeSvgPath}`)
+                        } else if (fs.existsSync(svgPath)) {
+                          // SVG exists, use it as social image
+                          const relativeSvgPath = path
+                            .relative(contentDir, svgPath)
+                            .replace(/\\/g, "/")
+                          firstExcalidrawImage = relativeSvgPath
+                          console.log(`Using SVG for OG image: ${relativeSvgPath}`)
+                        } else {
+                          // No image found
+                          console.log(
+                            `No PNG/SVG found for ${excalidrawPath}. Export from Obsidian Excalidraw plugin to use as OG image.`,
+                          )
+                          firstExcalidrawImage = `__EXCALIDRAW__:${excalidrawPath}`
+                        }
+                      }
                     }
                   } catch (error) {
                     console.error(`Failed to read Excalidraw file: ${excalidrawFullPath}`, error)
@@ -118,6 +166,14 @@ export const Excalidraw: QuartzTransformerPlugin = () => {
                 }
               }
             })
+
+            // Set socialImage in frontmatter if we found an excalidraw
+            if (firstExcalidrawImage && !file.data.frontmatter?.socialImage) {
+              if (!file.data.frontmatter) {
+                file.data.frontmatter = {}
+              }
+              file.data.frontmatter.socialImage = firstExcalidrawImage
+            }
           }
         },
       ]

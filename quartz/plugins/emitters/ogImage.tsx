@@ -11,6 +11,8 @@ import { write } from "./helpers"
 import { BuildCtx } from "../../util/ctx"
 import { QuartzPluginData } from "../vfile"
 import fs from "node:fs/promises"
+import fsSync from "fs"
+import path from "path"
 import { styleText } from "util"
 
 const defaultOptions: SocialImageOptions = {
@@ -81,6 +83,25 @@ async function processOgImage(
     fileData.frontmatter?.description ??
     unescapeHTML(fileData.description?.trim() ?? i18n(cfg.locale).propertyDefaults.description)
 
+  // Check if socialImage is an Excalidraw reference
+  const socialImage = fileData.frontmatter?.socialImage
+  if (socialImage && typeof socialImage === "string" && socialImage.startsWith("__EXCALIDRAW__:")) {
+    const excalidrawPath = socialImage.replace("__EXCALIDRAW__:", "")
+    console.log(
+      styleText(
+        "yellow",
+        `\nInfo: Page "${title}" uses Excalidraw diagram "${excalidrawPath}" but PNG not found.`,
+      ),
+    )
+    console.log(
+      styleText(
+        "yellow",
+        `      To use it as OG image, export PNG from Obsidian Excalidraw plugin (Settings > Auto-export PNG)`,
+      ),
+    )
+    // Fall back to default OG image generation
+  }
+
   const stream = await generateSocialImage(
     {
       title,
@@ -148,9 +169,16 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
             let userDefinedOgImagePath = pageData.frontmatter?.socialImage
 
             if (userDefinedOgImagePath) {
-              userDefinedOgImagePath = isAbsoluteURL(userDefinedOgImagePath)
-                ? userDefinedOgImagePath
-                : `https://${baseUrl}/static/${userDefinedOgImagePath}`
+              if (isAbsoluteURL(userDefinedOgImagePath)) {
+                // Already absolute URL
+                userDefinedOgImagePath = userDefinedOgImagePath
+              } else if (userDefinedOgImagePath.startsWith("static/")) {
+                // Already in static folder
+                userDefinedOgImagePath = `https://${baseUrl}/${userDefinedOgImagePath}`
+              } else {
+                // Relative path from content folder (e.g., Excalidraw/file.svg)
+                userDefinedOgImagePath = `https://${baseUrl}/${userDefinedOgImagePath}`
+              }
             }
 
             const generatedOgImagePath = isRealFile
