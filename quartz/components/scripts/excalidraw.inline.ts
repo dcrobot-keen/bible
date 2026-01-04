@@ -339,7 +339,8 @@ document.addEventListener("nav", async () => {
 
         for (const [fileId, fileInfo] of Object.entries(embeddedFiles)) {
           const info = fileInfo as any
-          if (info.dataURL && info.dataURL.startsWith("/")) {
+          // Check if it's a URL reference (not already a data URI)
+          if (info.dataURL && !info.dataURL.startsWith("data:")) {
             try {
               console.log(`Fetching image: ${info.dataURL}`)
               const response = await fetch(info.dataURL)

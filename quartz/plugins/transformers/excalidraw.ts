@@ -3,6 +3,7 @@ import { Root as MdastRoot } from "mdast"
 import { visit } from "unist-util-visit"
 import path from "path"
 import fs from "fs"
+import { pathToRoot, joinSegments } from "../../util/path"
 
 export const Excalidraw: QuartzTransformerPlugin = () => {
   return {
@@ -12,6 +13,9 @@ export const Excalidraw: QuartzTransformerPlugin = () => {
         () => {
           return (tree: MdastRoot, file) => {
             const contentDir = path.resolve(file.cwd, "content")
+            // Calculate base directory for relative paths
+            const slug = file.data.slug || ""
+            const baseDir = pathToRoot(slug)
 
             // Look for text nodes containing ![[*.excalidraw]] pattern
             visit(tree, "text", (node: any, index, parent) => {
@@ -76,12 +80,13 @@ export const Excalidraw: QuartzTransformerPlugin = () => {
                               mimeType = "image/webp"
                             }
 
-                            // Store relative URL instead of base64 data
-                            // This will be fetched at runtime by the client
+                            // Create relative URL using pathToRoot to work on GitHub Pages
+                            const relativeUrl = joinSegments(baseDir, fileName)
+
                             embeddedFiles[fileId] = {
                               mimeType,
                               id: fileId,
-                              dataURL: `/${fileName}`, // URL reference only
+                              dataURL: relativeUrl, // Relative URL for GitHub Pages compatibility
                               created: Date.now(),
                             }
                           } catch (imgError) {
