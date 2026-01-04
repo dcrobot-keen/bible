@@ -314,7 +314,20 @@ document.addEventListener("nav", async () => {
         // Prepare elements and appState
         const elements = sceneData.elements || []
         const appState = sceneData.appState || {}
-        const files = sceneData.files || {}
+        let files = sceneData.files || {}
+
+        // Get embedded files from data attribute
+        const embeddedFilesAttr = node.getAttribute("data-embedded-files")
+        if (embeddedFilesAttr) {
+          try {
+            const embeddedFiles = JSON.parse(embeddedFilesAttr)
+            // Merge embedded files with existing files
+            files = { ...files, ...embeddedFiles }
+            console.log("Loaded embedded files:", Object.keys(embeddedFiles))
+          } catch (e) {
+            console.warn("Failed to parse embedded files:", e)
+          }
+        }
 
         console.log("Elements count:", elements.length)
         console.log("Files:", files)
@@ -372,10 +385,15 @@ document.addEventListener("nav", async () => {
         }
       } catch (error) {
         console.error("Failed to render Excalidraw:", error)
-        console.error("Error stack:", error.stack)
+        const errorMessage =
+          error instanceof Error ? error.message : String(error)
+        const errorStack = error instanceof Error ? error.stack : undefined
+        if (errorStack) {
+          console.error("Error stack:", errorStack)
+        }
         container.innerHTML = `<div style="padding: 20px; color: red;">
           Failed to render Excalidraw diagram<br/>
-          Error: ${error.message || error}<br/>
+          Error: ${errorMessage}<br/>
           Check console for details
         </div>`
 

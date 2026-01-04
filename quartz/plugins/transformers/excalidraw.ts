@@ -46,12 +46,64 @@ export const Excalidraw: QuartzTransformerPlugin = () => {
                     if (jsonMatch && jsonMatch[1]) {
                       const compressedData = jsonMatch[1].trim()
 
+                      // Extract embedded files
+                      const embeddedFilesRegex = /^([a-f0-9]+):\s*\[\[([^\]]+)\]\]/gm
+                      const embeddedFiles: Record<
+                        string,
+                        { mimeType: string; id: string; dataURL: string; created: number }
+                      > = {}
+                      let fileMatch
+
+                      while ((fileMatch = embeddedFilesRegex.exec(content)) !== null) {
+                        const fileId = fileMatch[1]
+                        const fileName = fileMatch[2]
+
+                        // Try to find the image file in content directory
+                        const imagePath = path.resolve(contentDir, fileName)
+                        if (fs.existsSync(imagePath)) {
+                          try {
+                            // Read image file and convert to base64 data URI
+                            const imageBuffer = fs.readFileSync(imagePath)
+                            const ext = path.extname(fileName).toLowerCase()
+                            let mimeType = "image/png"
+
+                            if (ext === ".jpg" || ext === ".jpeg") {
+                              mimeType = "image/jpeg"
+                            } else if (ext === ".gif") {
+                              mimeType = "image/gif"
+                            } else if (ext === ".svg") {
+                              mimeType = "image/svg+xml"
+                            } else if (ext === ".webp") {
+                              mimeType = "image/webp"
+                            }
+
+                            const base64 = imageBuffer.toString("base64")
+                            const dataURL = `data:${mimeType};base64,${base64}`
+
+                            // Create BinaryFileData object
+                            embeddedFiles[fileId] = {
+                              mimeType,
+                              id: fileId,
+                              dataURL,
+                              created: Date.now(),
+                            }
+                          } catch (imgError) {
+                            console.warn(`Failed to read image file: ${imagePath}`, imgError)
+                          }
+                        }
+                      }
+
                       // Create a code block node with excalidraw-data class
                       const codeNode = {
                         type: "code",
                         lang: "excalidraw-data",
                         value: compressedData,
                         meta: null,
+                        data: {
+                          hProperties: {
+                            "data-embedded-files": JSON.stringify(embeddedFiles),
+                          },
+                        },
                       }
 
                       if (parent && index !== undefined) {
