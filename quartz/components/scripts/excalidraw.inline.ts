@@ -288,8 +288,22 @@ document.addEventListener("nav", async () => {
     const darkMode = document.documentElement.getAttribute("saved-theme") === "dark"
 
     for (const node of nodes) {
-      const compressedData = textMapping.get(node)?.trim()
-      if (!compressedData) continue
+      const rawData = textMapping.get(node)?.trim()
+      if (!rawData) continue
+
+      // Split compressed data and embedded files
+      const parts = rawData.split("|||EMBEDDED_FILES|||")
+      const compressedData = parts[0]
+      let embeddedFiles = {}
+
+      if (parts.length > 1) {
+        try {
+          embeddedFiles = JSON.parse(parts[1])
+          console.log("Loaded embedded files from data:", Object.keys(embeddedFiles))
+        } catch (e) {
+          console.warn("Failed to parse embedded files:", e)
+        }
+      }
 
       // Decompress the data
       const sceneData = decompressData(compressedData, pakoImport, lzStringImport)
@@ -319,23 +333,40 @@ document.addEventListener("nav", async () => {
         // Prepare elements and appState
         const elements = sceneData.elements || []
         const appState = sceneData.appState || {}
-        let files = sceneData.files || {}
 
-        // Get embedded files from data attribute
-        const embeddedFilesAttr = node.getAttribute("data-embedded-files")
-        if (embeddedFilesAttr) {
-          try {
-            const embeddedFiles = JSON.parse(embeddedFilesAttr)
-            // Merge embedded files with existing files
-            files = { ...files, ...embeddedFiles }
-            console.log("Loaded embedded files:", Object.keys(embeddedFiles))
-          } catch (e) {
-            console.warn("Failed to parse embedded files:", e)
+        // Load images from URLs and convert to base64 data URIs
+        const loadedFiles: any = { ...(sceneData.files || {}) }
+
+        for (const [fileId, fileInfo] of Object.entries(embeddedFiles)) {
+          const info = fileInfo as any
+          if (info.dataURL && info.dataURL.startsWith("/")) {
+            try {
+              console.log(`Fetching image: ${info.dataURL}`)
+              const response = await fetch(info.dataURL)
+              const blob = await response.blob()
+              const base64 = await new Promise<string>((resolve) => {
+                const reader = new FileReader()
+                reader.onloadend = () => resolve(reader.result as string)
+                reader.readAsDataURL(blob)
+              })
+
+              loadedFiles[fileId] = {
+                ...info,
+                dataURL: base64,
+              }
+              console.log(`Loaded image: ${info.dataURL}`)
+            } catch (err) {
+              console.warn(`Failed to load image ${info.dataURL}:`, err)
+            }
+          } else {
+            loadedFiles[fileId] = info
           }
         }
 
+        const files = loadedFiles
+
         console.log("Elements count:", elements.length)
-        console.log("Files:", files)
+        console.log("Files:", Object.keys(files))
 
         // Try to render using canvas first (more reliable than SVG with workers)
         try {

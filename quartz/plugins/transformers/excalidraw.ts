@@ -62,8 +62,7 @@ export const Excalidraw: QuartzTransformerPlugin = () => {
                         const imagePath = path.resolve(contentDir, fileName)
                         if (fs.existsSync(imagePath)) {
                           try {
-                            // Read image file and convert to base64 data URI
-                            const imageBuffer = fs.readFileSync(imagePath)
+                            // Store URL reference instead of base64 data
                             const ext = path.extname(fileName).toLowerCase()
                             let mimeType = "image/png"
 
@@ -77,14 +76,12 @@ export const Excalidraw: QuartzTransformerPlugin = () => {
                               mimeType = "image/webp"
                             }
 
-                            const base64 = imageBuffer.toString("base64")
-                            const dataURL = `data:${mimeType};base64,${base64}`
-
-                            // Create BinaryFileData object
+                            // Store relative URL instead of base64 data
+                            // This will be fetched at runtime by the client
                             embeddedFiles[fileId] = {
                               mimeType,
                               id: fileId,
-                              dataURL,
+                              dataURL: `/${fileName}`, // URL reference only
                               created: Date.now(),
                             }
                           } catch (imgError) {
@@ -94,16 +91,15 @@ export const Excalidraw: QuartzTransformerPlugin = () => {
                       }
 
                       // Create a code block node with excalidraw-data class
+                      // Embed files data directly in the value with a separator
+                      const embeddedFilesJson = JSON.stringify(embeddedFiles)
+                      const valueWithFiles = `${compressedData}|||EMBEDDED_FILES|||${embeddedFilesJson}`
+
                       const codeNode = {
                         type: "code",
                         lang: "excalidraw-data",
-                        value: compressedData,
+                        value: valueWithFiles,
                         meta: null,
-                        data: {
-                          hProperties: {
-                            "data-embedded-files": JSON.stringify(embeddedFiles),
-                          },
-                        },
                       }
 
                       if (parent && index !== undefined) {

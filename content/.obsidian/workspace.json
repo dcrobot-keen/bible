@@ -22,21 +22,31 @@
             }
           },
           {
-            "id": "eb02c180f1346b32",
+            "id": "b11ccac882457f62",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "modern-robot-sw/들어가기 전에.md",
-                "mode": "source",
-                "source": false
+                "file": "Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw.md"
               },
-              "icon": "lucide-file",
-              "title": "들어가기 전에"
+              "icon": "excalidraw-icon",
+              "title": "Drawing-2026-01-03-13.02.00.excalidraw"
+            }
+          },
+          {
+            "id": "effde72794bd4784",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing-2026-01-03-13.02.00.excalidraw"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -109,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "modern-robot-sw/들어가기 전에.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +129,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 들어가기 전에"
+              "title": "Backlinks for index"
             }
           },
           {
@@ -128,12 +138,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "modern-robot-sw/들어가기 전에.md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 들어가기 전에"
+              "title": "Outgoing links from index"
             }
           },
           {
@@ -171,13 +181,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "modern-robot-sw/들어가기 전에.md",
+                "file": "index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 들어가기 전에"
+              "title": "Outline of index"
             }
           }
         ]
@@ -199,23 +209,35 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "eb02c180f1346b32",
+  "active": "effde72794bd4784",
   "lastOpenFiles": [
+    "Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw.dark.svg",
+    "Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw.light.svg",
     "Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw.md",
-    "Untitled.md",
-    "modern-robot-sw/들어가기 전에.md",
-    "modern-robot-sw/slam/slam 은 어떻게 하는가.md",
-    "index.md",
-    "robot icon.png",
-    "modern-robot-sw/element-of-robot/1장- 로봇 공학 기초(작성중).md",
-    "Gemini_Generated_Image_f3zuaxf3zuaxf3zu.png",
-    "Gemini_Generated_Image_c0v5qzc0v5qzc0v5.png",
+    "Excalidraw/images/Gemini_Generated_Image_3udybt3udybt3udy.png",
+    "Excalidraw/images/Gemini_Generated_Image_f3zuaxf3zuaxf3zu.png",
+    "Excalidraw/images/Gemini_Generated_Image_c0v5qzc0v5qzc0v5.png",
+    "Excalidraw/images/Gemini_Generated_Image_135hws135hws135h.png",
+    "Excalidraw/images",
     "Gemini_Generated_Image_3udybt3udybt3udy.png",
-    "Gemini_Generated_Image_135hws135hws135h.png",
+    "Excalidraw/Drawing 2026-01-03 13.02.00.excalidraw.md",
+    "Excalidraw/Drawing 2026-01-03 13.02.00.excalidraw.dark.svg",
+    "Excalidraw/Drawing 2026-01-03 13.02.00.excalidraw.light.svg",
+    "svg/Drawing 2026-01-03 13.02.00.excalidraw.svg",
+    "svg",
+    "새 폴더",
+    "modern-robot-sw/들어가기 전에.md",
+    "index.md",
+    "modern-robot-sw/element-of-robot/1장- 로봇 공학 기초(작성중).md",
+    "Excalidraw/Drawing 2026-01-03 13.02.33.excalidraw.md",
+    "Untitled.canvas",
     "Excalidraw",
+    "modern-robot-sw/drawing",
+    "Untitled.md",
     "modern-robot-sw/humanoid/Humanoid.md",
     "modern-robot-sw/humanoid",
     "modern-robot-sw/ros/ROS 핥기.md",
+    "modern-robot-sw/slam/slam 은 어떻게 하는가.md",
     "modern-robot-sw/ros",
     "modern-robot-sw/cloud-robotics/Cloud Robotics 설계하기.md",
     "modern-robot-sw/cloud-robotics",
@@ -224,14 +246,8 @@
     "modern-robot-sw/mapf/Multi Agent Path Finding.md",
     "modern-robot-sw/fleet-mgmt",
     "modern-robot-sw/robot-map/Robot Map.md",
-    "modern-robot-sw/mapf",
     "modern-robot-sw/physical-ai/Physical AI.md",
-    "modern-robot-sw/robot-map",
-    "modern-robot-sw/Welcome.md",
-    "modern-robot-sw/physical-ai",
     "modern-robot-sw/digitial-twin/Digital Twin.md",
-    "modern-robot-sw/digitial-twin",
-    "modern-robot-sw/element-of-robot/1장- 로봇 공학 기초.md",
     "wikilinks.md",
     "modern-robot-sw/element-of-robot/index.md",
     "Robot.md",
