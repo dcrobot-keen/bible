@@ -44,34 +44,3 @@ export async function fetchCanonical(url: URL): Promise<Response> {
   const [_, redirect] = text.match(canonicalRegex) ?? []
   return redirect ? fetch(`${new URL(redirect, url)}`) : res
 }
-
-export function getUserPreferredColorScheme(): "light" | "dark" {
-  return window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark"
-}
-
-export function renderExcalidrawLinks(theme: "dark" | "light") {
-  const currentTheme = theme === "dark" ? "light" : "dark"
-  Object.values(document.getElementsByTagName("img")).forEach((img) => {
-    if (img.src.endsWith(`.excalidraw.${currentTheme}.svg`)) {
-      const srcParts = img.src.split(".")
-      srcParts.splice(-2, 1, theme)
-      img.src = srcParts.join(".")
-    }
-  })
-}
-
-// Convert .excalidraw links to themed SVG images
-document.addEventListener("nav", () => {
-  const theme = localStorage.getItem("theme") ?? getUserPreferredColorScheme()
-  const article = document.getElementsByTagName("article")[0]
-  if (!article) return
-
-  Object.values(article.getElementsByTagName("a")).forEach((a) => {
-    if (a.href.endsWith(".excalidraw")) {
-      const img = document.createElement("img")
-      img.src = `${a.href}.${theme}.svg`
-      img.alt = "Excalidraw diagram"
-      a.replaceWith(img)
-    }
-  })
-})

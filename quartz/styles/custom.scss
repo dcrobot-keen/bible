@@ -1,3 +1,33 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+
+// Excalidraw diagram support
+.excalidraw-wrapper {
+  display: block;
+  margin: 1rem 0;
+  text-align: center;
+
+  .excalidraw-svg {
+    max-width: 100%;
+    height: auto;
+    display: none;
+  }
+
+  // Show light theme in light mode
+  &:has(.excalidraw-light) {
+    .excalidraw-light {
+      display: inline-block;
+    }
+  }
+
+  // Show dark theme in dark mode
+  html[saved-theme="dark"] & {
+    .excalidraw-light {
+      display: none;
+    }
+    .excalidraw-dark {
+      display: inline-block;
+    }
+  }
+}

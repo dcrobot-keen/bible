@@ -25,12 +25,10 @@
             "id": "b11ccac882457f62",
             "type": "leaf",
             "state": {
-              "type": "image",
-              "state": {
-                "file": "svg/Drawing 2026-01-03 13.02.00.excalidraw.svg"
-              },
-              "icon": "lucide-image",
-              "title": "Drawing 2026-01-03 13.02.00.excalidraw"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ],
@@ -200,7 +198,14 @@
   "active": "b11ccac882457f62",
   "lastOpenFiles": [
     "Excalidraw/Drawing 2026-01-03 13.02.00.excalidraw.md",
+    "Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw.md",
+    "Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw.dark.svg",
+    "Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw.light.svg",
+    "Excalidraw/Drawing 2026-01-03 13.02.00.excalidraw.dark.svg",
+    "Excalidraw/Drawing 2026-01-03 13.02.00.excalidraw.light.svg",
     "svg/Drawing 2026-01-03 13.02.00.excalidraw.svg",
+    "svg/Drawing 2026-01-03 13.02.00.excalidraw.dark.svg",
+    "svg/Drawing 2026-01-03 13.02.00.excalidraw.light.svg",
     "svg",
     "새 폴더",
     "modern-robot-sw/들어가기 전에.md",
@@ -209,8 +214,6 @@
     "Gemini_Generated_Image_f3zuaxf3zuaxf3zu.png",
     "Gemini_Generated_Image_c0v5qzc0v5qzc0v5.png",
     "Gemini_Generated_Image_135hws135hws135h.png",
-    "Gemini_Generated_Image_3udybt3udybt3udy.png",
-    "robot icon.png",
     "Excalidraw/Drawing 2026-01-03 13.02.33.excalidraw.md",
     "Untitled.canvas",
     "Excalidraw",
