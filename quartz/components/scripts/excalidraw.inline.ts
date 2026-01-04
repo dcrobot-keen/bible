@@ -284,6 +284,31 @@ document.addEventListener("nav", async () => {
     textMapping.set(node, node.textContent || "")
   }
 
+  // Load fonts for Korean text support
+  async function loadFonts() {
+    // Add Google Fonts link for Korean font if not already present
+    if (!document.querySelector('link[href*="Noto+Sans+KR"]')) {
+      const link = document.createElement("link")
+      link.rel = "stylesheet"
+      link.href =
+        "https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap"
+      document.head.appendChild(link)
+      console.log("Added Noto Sans KR font link")
+    }
+
+    try {
+      // Wait for fonts to load
+      await document.fonts.ready
+      await Promise.all([
+        document.fonts.load('400 16px "Noto Sans KR"'),
+        document.fonts.load('700 16px "Noto Sans KR"'),
+      ])
+      console.log("Korean fonts loaded successfully")
+    } catch (e) {
+      console.warn("Failed to load fonts:", e)
+    }
+  }
+
   async function renderExcalidraw() {
     const darkMode = document.documentElement.getAttribute("saved-theme") === "dark"
 
@@ -369,9 +394,45 @@ document.addEventListener("nav", async () => {
         console.log("Elements count:", elements.length)
         console.log("Files:", Object.keys(files))
 
-        // Try to render using canvas first (more reliable than SVG with workers)
+        // Use SVG rendering for better Korean font support
         try {
-          console.log("Attempting to render with exportToCanvas...")
+          console.log("Attempting to render with exportToSvg...")
+          const svg = await excalidrawImport.exportToSvg({
+            elements: elements,
+            appState: {
+              ...appState,
+              exportBackground: true,
+              exportWithDarkMode: darkMode,
+              viewBackgroundColor: darkMode ? "#1e1e1e" : "#ffffff",
+            },
+            files: files || null,
+            exportPadding: 10,
+            exportEmbedScene: true,
+          })
+
+          console.log("SVG generated successfully")
+
+          // Add Korean font support to SVG text elements
+          const textElements = svg.querySelectorAll("text")
+          textElements.forEach((text) => {
+            const currentFont = text.getAttribute("font-family") || ""
+            // Add Korean fonts as fallback
+            const newFont = `${currentFont}, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif`
+            text.setAttribute("font-family", newFont)
+          })
+
+          // Add SVG to container with responsive sizing
+          svg.style.maxWidth = "100%"
+          svg.style.maxHeight = "80vh"
+          svg.style.width = "auto"
+          svg.style.height = "auto"
+          container.appendChild(svg)
+
+          console.log("Excalidraw diagram rendered successfully (SVG with Korean fonts)")
+        } catch (svgError) {
+          console.log("SVG export failed, trying Canvas:", svgError)
+
+          // Fallback to Canvas
           const canvas = await excalidrawImport.exportToCanvas({
             elements: elements,
             appState: {
@@ -381,6 +442,7 @@ document.addEventListener("nav", async () => {
               viewBackgroundColor: darkMode ? "#1e1e1e" : "#ffffff",
             },
             files: files || null,
+            exportEmbedScene: true,
           })
 
           console.log("Canvas generated successfully")
@@ -393,33 +455,7 @@ document.addEventListener("nav", async () => {
           canvas.style.objectFit = "contain"
           container.appendChild(canvas)
 
-          console.log("Excalidraw diagram rendered successfully (canvas)")
-        } catch (canvasError) {
-          console.log("Canvas export failed, trying SVG:", canvasError)
-
-          // Fallback to SVG
-          const svg = await excalidrawImport.exportToSvg({
-            elements: elements,
-            appState: {
-              ...appState,
-              exportBackground: true,
-              exportWithDarkMode: darkMode,
-              viewBackgroundColor: darkMode ? "#1e1e1e" : "#ffffff",
-            },
-            files: files || null,
-            exportPadding: 10,
-          })
-
-          console.log("SVG generated successfully")
-
-          // Add SVG to container with responsive sizing
-          svg.style.maxWidth = "100%"
-          svg.style.maxHeight = "80vh"
-          svg.style.width = "auto"
-          svg.style.height = "auto"
-          container.appendChild(svg)
-
-          console.log("Excalidraw diagram rendered successfully (SVG)")
+          console.log("Excalidraw diagram rendered successfully (canvas fallback)")
         }
 
         // Replace code block with container
@@ -449,6 +485,8 @@ document.addEventListener("nav", async () => {
     }
   }
 
+  // Load fonts before rendering
+  await loadFonts()
   await renderExcalidraw()
 
   // Re-render on theme change

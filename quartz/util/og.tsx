@@ -51,15 +51,29 @@ export async function getSatoriFonts(headerFont: FontSpecification, bodyFont: Fo
     }
   })
 
-  const [headerFonts, bodyFonts] = await Promise.all([
+  // Add Korean font support (Noto Sans KR)
+  const koreanFontPromises = [400, 700].map(async (weight) => {
+    const data = await fetchTtf("Noto Sans KR", weight as FontWeight)
+    if (!data) return null
+    return {
+      name: "Noto Sans KR",
+      data,
+      weight: weight as FontWeight,
+      style: "normal" as const,
+    }
+  })
+
+  const [headerFonts, bodyFonts, koreanFonts] = await Promise.all([
     Promise.all(headerFontPromises),
     Promise.all(bodyFontPromises),
+    Promise.all(koreanFontPromises),
   ])
 
-  // Filter out any failed fetches and combine header and body fonts
+  // Filter out any failed fetches and combine header, body, and Korean fonts
   const fonts: SatoriOptions["fonts"] = [
     ...headerFonts.filter((font): font is NonNullable<typeof font> => font !== null),
     ...bodyFonts.filter((font): font is NonNullable<typeof font> => font !== null),
+    ...koreanFonts.filter((font): font is NonNullable<typeof font> => font !== null),
   ]
 
   return fonts
@@ -198,6 +212,10 @@ export const defaultImage: SocialImageOptions["imageStructure"] = ({
   const bodyFont = getFontSpecificationName(cfg.theme.typography.body)
   const headerFont = getFontSpecificationName(cfg.theme.typography.header)
 
+  // Add Korean font as fallback
+  const bodyFontWithFallback = `${bodyFont}, "Noto Sans KR", sans-serif`
+  const headerFontWithFallback = `${headerFont}, "Noto Sans KR", sans-serif`
+
   return (
     <div
       style={{
@@ -207,7 +225,7 @@ export const defaultImage: SocialImageOptions["imageStructure"] = ({
         width: "100%",
         backgroundColor: cfg.theme.colors[colorScheme].light,
         padding: "2.5rem",
-        fontFamily: bodyFont,
+        fontFamily: bodyFontWithFallback,
       }}
     >
       {/* Header Section */}
@@ -234,7 +252,7 @@ export const defaultImage: SocialImageOptions["imageStructure"] = ({
             display: "flex",
             fontSize: 32,
             color: cfg.theme.colors[colorScheme].gray,
-            fontFamily: bodyFont,
+            fontFamily: bodyFontWithFallback,
           }}
         >
           {cfg.baseUrl}
@@ -253,7 +271,7 @@ export const defaultImage: SocialImageOptions["imageStructure"] = ({
           style={{
             margin: 0,
             fontSize: useSmallerFont ? 64 : 72,
-            fontFamily: headerFont,
+            fontFamily: headerFontWithFallback,
             fontWeight: 700,
             color: cfg.theme.colors[colorScheme].dark,
             lineHeight: 1.2,
