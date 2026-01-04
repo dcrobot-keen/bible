@@ -147,8 +147,9 @@ Physical AI를 가능하게 하는 가장 중요한 요소 중에 하나가 Digi
 #### 3. World Model
 
 World Model은  AI가 텍스트나 이미지를 넘어 현실 세계의 물리 법칙, 공간, 시간, 인과 관계 등을 이해하고 시뮬레이션하여 미래를 예측하는 지능형 시스템으로 Physics 모델이 각 오브젝트에 담겨져 있습니다.
-Nvidia는 Cosmos라는 World 모델을 내 놓았고 github 레포지토리에서 찾아 볼 수 있습니다. https://github.com/nvidia-cosmos 
-Nvidia Omniverse 샘플을 다음에서 확인해 볼 수 있습니다.  https://youtu.be/gPaFgNEF82Q?si=Vu9IfJZxIJdkmdl6 
+Nvidia는 Cosmos라는 World 모델을 내 놓았고 github 레포지토리에서 찾아 볼 수 있습니다. 
+-> https://github.com/nvidia-cosmos 
+Nvidia Omniverse 샘플을 다음에서 확인해 볼 수 있습니다.  ![](https://youtu.be/gPaFgNEF82Q?si=Vu9IfJZxIJdkmdl6 )
 
 #### 4. Simulator
 
