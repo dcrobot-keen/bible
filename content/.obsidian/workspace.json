@@ -39,12 +39,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "modern-robot-sw/들어가기 전에.md",
+                "file": "modern-robot-sw/들어가기 전에 -1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "들어가기 전에"
+              "title": "들어가기 전에 -1"
             }
           }
         ],
@@ -213,6 +213,8 @@
   },
   "active": "effde72794bd4784",
   "lastOpenFiles": [
+    "modern-robot-sw/들어가기 전에 -2.md",
+    "modern-robot-sw/들어가기 전에 -1.md",
     "Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw.md",
     "Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw.dark.svg",
     "Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw.light.svg",
@@ -228,7 +230,6 @@
     "svg/Drawing 2026-01-03 13.02.00.excalidraw.svg",
     "svg",
     "새 폴더",
-    "modern-robot-sw/들어가기 전에.md",
     "index.md",
     "modern-robot-sw/element-of-robot/1장- 로봇 공학 기초(작성중).md",
     "Excalidraw/Drawing 2026-01-03 13.02.33.excalidraw.md",

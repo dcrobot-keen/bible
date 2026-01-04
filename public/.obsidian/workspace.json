@@ -1,0 +1,258 @@
+{
+  "main": {
+    "id": "8807993d41705adb",
+    "type": "split",
+    "children": [
+      {
+        "id": "6101e5939fc31ef3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5c8a9c297e046fe5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          },
+          {
+            "id": "b11ccac882457f62",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing-2026-01-03-13.02.00.excalidraw"
+            }
+          },
+          {
+            "id": "effde72794bd4784",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "modern-robot-sw/들어가기 전에.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "들어가기 전에"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3708c346d8c158da",
+    "type": "split",
+    "children": [
+      {
+        "id": "fed22d9cbc75ea53",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2cb449d951159e2f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "50cb88dcbcf6c3da",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "e2e1f9719a05793b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "277720fe4d8555d5",
+    "type": "split",
+    "children": [
+      {
+        "id": "fb841af253cf82a7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4f2802b30813d42c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for index"
+            }
+          },
+          {
+            "id": "831577778518b524",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from index"
+            }
+          },
+          {
+            "id": "6f4886b8e9ab8b48",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "ea1171e67b436a46",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "26f6185ce956e1c0",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "index.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of index"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-excalidraw-plugin:New drawing": false
+    }
+  },
+  "active": "effde72794bd4784",
+  "lastOpenFiles": [
+    "Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw.md",
+    "modern-robot-sw/들어가기 전에.md",
+    "Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw.dark.svg",
+    "Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw.light.svg",
+    "Excalidraw/images/Gemini_Generated_Image_3udybt3udybt3udy.png",
+    "Excalidraw/images/Gemini_Generated_Image_f3zuaxf3zuaxf3zu.png",
+    "Excalidraw/images/Gemini_Generated_Image_c0v5qzc0v5qzc0v5.png",
+    "Excalidraw/images/Gemini_Generated_Image_135hws135hws135h.png",
+    "Excalidraw/images",
+    "Gemini_Generated_Image_3udybt3udybt3udy.png",
+    "Excalidraw/Drawing 2026-01-03 13.02.00.excalidraw.md",
+    "Excalidraw/Drawing 2026-01-03 13.02.00.excalidraw.dark.svg",
+    "Excalidraw/Drawing 2026-01-03 13.02.00.excalidraw.light.svg",
+    "svg/Drawing 2026-01-03 13.02.00.excalidraw.svg",
+    "svg",
+    "새 폴더",
+    "index.md",
+    "modern-robot-sw/element-of-robot/1장- 로봇 공학 기초(작성중).md",
+    "Excalidraw/Drawing 2026-01-03 13.02.33.excalidraw.md",
+    "Untitled.canvas",
+    "Excalidraw",
+    "modern-robot-sw/drawing",
+    "Untitled.md",
+    "modern-robot-sw/humanoid/Humanoid.md",
+    "modern-robot-sw/humanoid",
+    "modern-robot-sw/ros/ROS 핥기.md",
+    "modern-robot-sw/slam/slam 은 어떻게 하는가.md",
+    "modern-robot-sw/ros",
+    "modern-robot-sw/cloud-robotics/Cloud Robotics 설계하기.md",
+    "modern-robot-sw/cloud-robotics",
+    "modern-robot-sw/fleet-mgmt/통합관제SW는 어떻게 만드는가.md",
+    "modern-robot-sw/slam",
+    "modern-robot-sw/mapf/Multi Agent Path Finding.md",
+    "modern-robot-sw/fleet-mgmt",
+    "modern-robot-sw/robot-map/Robot Map.md",
+    "modern-robot-sw/physical-ai/Physical AI.md",
+    "modern-robot-sw/digitial-twin/Digital Twin.md",
+    "wikilinks.md",
+    "modern-robot-sw/element-of-robot/index.md",
+    "Robot.md",
+    "().md"
+  ]
+}

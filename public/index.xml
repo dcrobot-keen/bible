@@ -10,13 +10,13 @@
     <link>https://quartz.jzhao.xyz/Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw</link>
     <guid>https://quartz.jzhao.xyz/Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw</guid>
     <description><![CDATA[ ⚠ Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ]]></description>
-    <pubDate>Sun, 04 Jan 2026 03:42:47 GMT</pubDate>
+    <pubDate>Sun, 04 Jan 2026 04:06:30 GMT</pubDate>
   </item><item>
     <title>들어가기 전에</title>
     <link>https://quartz.jzhao.xyz/modern-robot-sw/%EB%93%A4%EC%96%B4%EA%B0%80%EA%B8%B0-%EC%A0%84%EC%97%90</link>
     <guid>https://quartz.jzhao.xyz/modern-robot-sw/%EB%93%A4%EC%96%B4%EA%B0%80%EA%B8%B0-%EC%A0%84%EC%97%90</guid>
     <description><![CDATA[ 로봇 산업의 영역은 매우 영역이 넓습니다. 산업용 로봇, 배달 로봇, 그리고 휴머노이드에 이르기 까지. 어떤 영역의 어떤 로봇이 관심이 있을지 모르지만, 현재 로봇 SW개발의 근간을 이루고 있는 기본 기술들을 이 블로그에서는 다루려고 하고 있습니다. ]]></description>
-    <pubDate>Sun, 04 Jan 2026 01:32:06 GMT</pubDate>
+    <pubDate>Sun, 04 Jan 2026 04:06:30 GMT</pubDate>
   </item><item>
     <title>Welcome</title>
     <link>https://quartz.jzhao.xyz/</link>
@@ -48,12 +48,6 @@
     <description><![CDATA[ 이 문서에서는 디지털 트윈을 다룬다. 왜 로봇에서 디지탈 트윈이 중요한지에 대한 백서. ]]></description>
     <pubDate>Mon, 29 Dec 2025 09:03:22 GMT</pubDate>
   </item><item>
-    <title>통합관제SW는 어떻게 만드는가</title>
-    <link>https://quartz.jzhao.xyz/modern-robot-sw/fleet-mgmt/%ED%86%B5%ED%95%A9%EA%B4%80%EC%A0%9CSW%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EB%A7%8C%EB%93%9C%EB%8A%94%EA%B0%80</link>
-    <guid>https://quartz.jzhao.xyz/modern-robot-sw/fleet-mgmt/%ED%86%B5%ED%95%A9%EA%B4%80%EC%A0%9CSW%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EB%A7%8C%EB%93%9C%EB%8A%94%EA%B0%80</guid>
-    <description><![CDATA[ ARC brain 만든 썰 푼다. ]]></description>
-    <pubDate>Mon, 29 Dec 2025 09:03:22 GMT</pubDate>
-  </item><item>
     <title>Humanoid</title>
     <link>https://quartz.jzhao.xyz/modern-robot-sw/humanoid/Humanoid</link>
     <guid>https://quartz.jzhao.xyz/modern-robot-sw/humanoid/Humanoid</guid>
@@ -64,6 +58,12 @@
     <link>https://quartz.jzhao.xyz/modern-robot-sw/mapf/Multi-Agent-Path-Finding</link>
     <guid>https://quartz.jzhao.xyz/modern-robot-sw/mapf/Multi-Agent-Path-Finding</guid>
     <description><![CDATA[ MAPF는 어떻게 하는 건가. ]]></description>
+    <pubDate>Mon, 29 Dec 2025 09:03:22 GMT</pubDate>
+  </item><item>
+    <title>통합관제SW는 어떻게 만드는가</title>
+    <link>https://quartz.jzhao.xyz/modern-robot-sw/fleet-mgmt/%ED%86%B5%ED%95%A9%EA%B4%80%EC%A0%9CSW%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EB%A7%8C%EB%93%9C%EB%8A%94%EA%B0%80</link>
+    <guid>https://quartz.jzhao.xyz/modern-robot-sw/fleet-mgmt/%ED%86%B5%ED%95%A9%EA%B4%80%EC%A0%9CSW%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EB%A7%8C%EB%93%9C%EB%8A%94%EA%B0%80</guid>
+    <description><![CDATA[ ARC brain 만든 썰 푼다. ]]></description>
     <pubDate>Mon, 29 Dec 2025 09:03:22 GMT</pubDate>
   </item>
     </channel>
