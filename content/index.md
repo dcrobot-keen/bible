@@ -13,13 +13,15 @@ title: Welcome
 ~~한 2년 걸리겠네요.~~ 1년 목표로 달려보겠습니다.
 
 - [[Introduction]] 
+- [[로봇 관제 개요]]
+	- [[로봇관제-모니터링]]
 - [Robot SW의 기초](modern-robot-sw/element-of-robot/index.md)
 - [[ROS 핥기]]
 - [[Digital Twin]]
 - [[Physical AI]]
 - [[Robot Map]]
 - [[slam 은 어떻게 하는가]]
-- [[통합관제SW는 어떻게 만드는가]]
+- 
 - [[Cloud Robotics 설계하기]]
 - [[Multi Agent Path Finding]]
 - [[Humanoid]]
