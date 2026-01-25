@@ -16,7 +16,7 @@ title: Welcome
 - [[로봇 관제 개요]]
 	- [[로봇관제-모니터링]]
 - [Robot SW의 기초](modern-robot-sw/element-of-robot/index.md)
-- [[ROS 핥기]]
+- [[ROS 둘러보기]]
 - [[Digital Twin]]
 - [[Physical AI]]
 - [[Robot Map]]
