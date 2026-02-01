@@ -8,191 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5c8a9c297e046fe5",
+            "id": "bc871a3cd66024ed",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "modern-robot-sw/fleet-mgmt/로봇관제-Mission.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
-            }
-          },
-          {
-            "id": "b11ccac882457f62",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing-2026-01-03-13.02.00.excalidraw"
-            }
-          },
-          {
-            "id": "effde72794bd4784",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing-2026-01-03-13.02.00.excalidraw"
-            }
-          },
-          {
-            "id": "9a0736cf043002f8",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/FleetManagementExplained02.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "FleetManagementExplained02.excalidraw"
-            }
-          },
-          {
-            "id": "947273fc5f5e26b8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "index.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "index"
-            }
-          },
-          {
-            "id": "a7951239c5a271d4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "modern-robot-sw/fleet-mgmt/로봇 관제 개요.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "로봇 관제 개요"
-            }
-          },
-          {
-            "id": "0532426bd7bfb55e",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.11.4"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.11.4"
-            }
-          },
-          {
-            "id": "30fbf6d5dc34f527",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/fleet/FleetManagementExplained03.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "FleetManagementExplained03.excalidraw"
-            }
-          },
-          {
-            "id": "b9ededf05fbf31e1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "modern-robot-sw/fleet-mgmt/로봇관제-모니터링.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "로봇관제-모니터링"
-            }
-          },
-          {
-            "id": "cf21ef61a5c01268",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "modern-robot-sw/fleet-mgmt/로봇관제-모니터링.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "로봇관제-모니터링"
-            }
-          },
-          {
-            "id": "79f8cbe3dd2ec9b5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "modern-robot-sw/fleet-mgmt/로봇 관제 개요.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "로봇 관제 개요"
-            }
-          },
-          {
-            "id": "ca39689de1bd70d9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "modern-robot-sw/fleet-mgmt/로봇 관제 개요.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "로봇 관제 개요"
-            }
-          },
-          {
-            "id": "570cbca268ff1b2a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "modern-robot-sw/fleet-mgmt/로봇관제-모니터링.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "로봇관제-모니터링"
-            }
-          },
-          {
-            "id": "24bb99b56df4604f",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "modern-robot-sw/images/20260125173113.png"
-              },
-              "icon": "lucide-image",
-              "title": "20260125173113"
+              "title": "로봇관제-Mission"
             }
           }
-        ],
-        "currentTab": 12
+        ]
       }
     ],
     "direction": "vertical"
@@ -355,34 +184,35 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "570cbca268ff1b2a",
+  "active": "bc871a3cd66024ed",
   "lastOpenFiles": [
-    "modern-robot-sw/fleet-mgmt/로봇 관제 개요.md",
-    "modern-robot-sw/fleet-mgmt/로봇관제-모니터링.md",
+    "Excalidraw/fleet/FleetManagementExplained05.excalidraw.md",
+    "Excalidraw/fleet/FleetManagementExplained02.excalidraw.md",
+    "Excalidraw/fleet/FleetManagementExplained03.excalidraw.md",
     "modern-robot-sw/fleet-mgmt/로봇관제-Mission.md",
+    "modern-robot-sw/fleet-mgmt/로봇관제-모니터링.md",
+    "Excalidraw/fleet/FleetManagementExplained04.excalidraw.md",
+    "Excalidraw/fleet/FleetManagementExplained05.excalidraw.light.svg",
+    "Excalidraw/fleet/FleetManagementExplained05.excalidraw.dark.svg",
+    "Excalidraw/fleet/FleetManagementExplained01.excalidraw.md",
+    "modern-robot-sw/fleet-mgmt/로봇 관제 개요.md",
+    "Excalidraw/fleet/FleetManagementExplained04.excalidraw.light.svg",
+    "Excalidraw/fleet/FleetManagementExplained04.excalidraw.dark.svg",
     "modern-robot-sw/ros/ROS 둘러보기.md",
     "modern-robot-sw/images/20260125192102.png",
     "modern-robot-sw/images/20260125173441.png",
     "modern-robot-sw/images/20260125173113.png",
-    "Excalidraw/fleet/FleetManagementExplained01.excalidraw.md",
     "Excalidraw/fleet",
     "Untitled",
     "로봇관제-mission/task.md",
     "로봇관제-mission",
     "modern-robot-sw/Introduction.md",
-    "Excalidraw/fleet/FleetManagementExplained04.excalidraw.md",
-    "Excalidraw/fleet/FleetManagementExplained04.excalidraw.light.svg",
-    "Excalidraw/fleet/FleetManagementExplained02.excalidraw.md",
     "Excalidraw/fleet/FleetManagementExplained02.excalidraw.light.svg",
-    "Excalidraw/fleet/FleetManagementExplained03.excalidraw.md",
     "Excalidraw/fleet/FleetManagementExplained02.excalidraw.dark.svg",
     "modern-robot-sw/element-of-robot/1장- 로봇 공학 기초(작성중).md",
-    "Excalidraw/fleet/FleetManagementExplained04.excalidraw.dark.svg",
     "Excalidraw/fleet/FleetManagementExplained03.excalidraw.light.svg",
     "modern-robot-sw/fleet-mgmt/로봇 관제 개요.md.tmp.42788.1768743020173",
     "index.md",
-    "Excalidraw/fleet/FleetManagementExplained03.excalidraw.dark.svg",
-    "Excalidraw/Drawing 2026-01-18 17.28.40.excalidraw.light.svg",
     "Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw.md",
     "Excalidraw/FleetManagementExplained01.excalidraw.restored.md",
     "Excalidraw/FleetManagement_explained.canvas",
@@ -402,8 +232,6 @@
     "modern-robot-sw/slam/slam 은 어떻게 하는가.md",
     "modern-robot-sw/cloud-robotics/Cloud Robotics 설계하기.md",
     "modern-robot-sw/mapf/Multi Agent Path Finding.md",
-    "modern-robot-sw/robot-map/Robot Map.md",
-    "modern-robot-sw/physical-ai/Physical AI.md",
-    "modern-robot-sw/digitial-twin/Digital Twin.md"
+    "modern-robot-sw/robot-map/Robot Map.md"
   ]
 }
