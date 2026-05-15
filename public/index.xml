@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Modern Robot SW</title>
+      <link>https://dcrobot-keen.github.io/modern-robot-sw</link>
+      <description>Last 10 notes on Modern Robot SW</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>Introduction</title>
+    <link>https://dcrobot-keen.github.io/modern-robot-sw/modern-robot-sw/Introduction</link>
+    <guid>https://dcrobot-keen.github.io/modern-robot-sw/modern-robot-sw/Introduction</guid>
+    <description><![CDATA[ 로봇 산업의 영역은 매우 영역이 넓습니다. 산업용 로봇, 배달 로봇, 그리고 휴머노이드에 이르기 까지. 어떤 영역의 어떤 로봇이 관심이 있을지 모르지만, 현재 로봇 SW개발의 근간을 이루고 있는 기본 기술들을 이 블로그에서는 다루려고 하고 있습니다. ]]></description>
+    <pubDate>Sun, 04 Jan 2026 10:58:07 GMT</pubDate>
+  </item><item>
+    <title>Welcome</title>
+    <link>https://dcrobot-keen.github.io/modern-robot-sw/</link>
+    <guid>https://dcrobot-keen.github.io/modern-robot-sw/</guid>
+    <description><![CDATA[ Modern Robot SW 이 곳은 Modern Robot SW 개발에 관한 내용을 다룹니다. 현재 로봇 개발은 실제 로봇 SW 뿐만이 아니라, 클라우드 로보틱스, Phyisical AI 등 다양한 분야를 다루고 있습니다. ]]></description>
+    <pubDate>Sun, 04 Jan 2026 10:49:20 GMT</pubDate>
+  </item><item>
+    <title>Drawing-2026-01-03-13.02.00.excalidraw</title>
+    <link>https://dcrobot-keen.github.io/modern-robot-sw/Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw</link>
+    <guid>https://dcrobot-keen.github.io/modern-robot-sw/Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw</guid>
+    <description><![CDATA[ ⚠ Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ]]></description>
+    <pubDate>Sun, 04 Jan 2026 07:00:41 GMT</pubDate>
+  </item><item>
+    <title>1장- 로봇 공학 기초(작성중)</title>
+    <link>https://dcrobot-keen.github.io/modern-robot-sw/modern-robot-sw/element-of-robot/1%EC%9E%A5--%EB%A1%9C%EB%B4%87-%EA%B3%B5%ED%95%99-%EA%B8%B0%EC%B4%88(%EC%9E%91%EC%84%B1%EC%A4%91)</link>
+    <guid>https://dcrobot-keen.github.io/modern-robot-sw/modern-robot-sw/element-of-robot/1%EC%9E%A5--%EB%A1%9C%EB%B4%87-%EA%B3%B5%ED%95%99-%EA%B8%B0%EC%B4%88(%EC%9E%91%EC%84%B1%EC%A4%91)</guid>
+    <description><![CDATA[ 로봇이란 무엇인가? 로봇은 “복잡한 일련의 동작을 자동으로 수행할 수 있는 기계, 특히 컴퓨터로 프로그래밍 가능한 기계”로 정의됩니다. ]]></description>
+    <pubDate>Sat, 03 Jan 2026 07:44:13 GMT</pubDate>
+  </item><item>
+    <title>index</title>
+    <link>https://dcrobot-keen.github.io/modern-robot-sw/modern-robot-sw/element-of-robot/</link>
+    <guid>https://dcrobot-keen.github.io/modern-robot-sw/modern-robot-sw/element-of-robot/</guid>
+    <description><![CDATA[ Elements of Robot 을 AI로 요약하고 개인적으로 정리해서 공유 하기 위해 정리된 페이지 입니다. ]]></description>
+    <pubDate>Sat, 03 Jan 2026 07:44:13 GMT</pubDate>
+  </item><item>
+    <title>Cloud Robotics 설계하기</title>
+    <link>https://dcrobot-keen.github.io/modern-robot-sw/modern-robot-sw/cloud-robotics/Cloud-Robotics-%EC%84%A4%EA%B3%84%ED%95%98%EA%B8%B0</link>
+    <guid>https://dcrobot-keen.github.io/modern-robot-sw/modern-robot-sw/cloud-robotics/Cloud-Robotics-%EC%84%A4%EA%B3%84%ED%95%98%EA%B8%B0</guid>
+    <description><![CDATA[ 잘 들어 보라구. ]]></description>
+    <pubDate>Mon, 29 Dec 2025 09:03:22 GMT</pubDate>
+  </item><item>
+    <title>Digital Twin</title>
+    <link>https://dcrobot-keen.github.io/modern-robot-sw/modern-robot-sw/digitial-twin/Digital-Twin</link>
+    <guid>https://dcrobot-keen.github.io/modern-robot-sw/modern-robot-sw/digitial-twin/Digital-Twin</guid>
+    <description><![CDATA[ 이 문서에서는 디지털 트윈을 다룬다. 왜 로봇에서 디지탈 트윈이 중요한지에 대한 백서. ]]></description>
+    <pubDate>Mon, 29 Dec 2025 09:03:22 GMT</pubDate>
+  </item><item>
+    <title>통합관제SW는 어떻게 만드는가</title>
+    <link>https://dcrobot-keen.github.io/modern-robot-sw/modern-robot-sw/fleet-mgmt/%ED%86%B5%ED%95%A9%EA%B4%80%EC%A0%9CSW%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EB%A7%8C%EB%93%9C%EB%8A%94%EA%B0%80</link>
+    <guid>https://dcrobot-keen.github.io/modern-robot-sw/modern-robot-sw/fleet-mgmt/%ED%86%B5%ED%95%A9%EA%B4%80%EC%A0%9CSW%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EB%A7%8C%EB%93%9C%EB%8A%94%EA%B0%80</guid>
+    <description><![CDATA[ ARC brain 만든 썰 푼다. ]]></description>
+    <pubDate>Mon, 29 Dec 2025 09:03:22 GMT</pubDate>
+  </item><item>
+    <title>Humanoid</title>
+    <link>https://dcrobot-keen.github.io/modern-robot-sw/modern-robot-sw/humanoid/Humanoid</link>
+    <guid>https://dcrobot-keen.github.io/modern-robot-sw/modern-robot-sw/humanoid/Humanoid</guid>
+    <description><![CDATA[ 휴머노이드 이야기를 좀 구체적으로 해 보자. ]]></description>
+    <pubDate>Mon, 29 Dec 2025 09:03:22 GMT</pubDate>
+  </item><item>
+    <title>Multi Agent Path Finding</title>
+    <link>https://dcrobot-keen.github.io/modern-robot-sw/modern-robot-sw/mapf/Multi-Agent-Path-Finding</link>
+    <guid>https://dcrobot-keen.github.io/modern-robot-sw/modern-robot-sw/mapf/Multi-Agent-Path-Finding</guid>
+    <description><![CDATA[ MAPF는 어떻게 하는 건가. ]]></description>
+    <pubDate>Mon, 29 Dec 2025 09:03:22 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>
