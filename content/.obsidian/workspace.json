@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5c8a9c297e046fe5",
+            "id": "b783cae39f7bf970",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,49 +20,8 @@
               "icon": "lucide-file",
               "title": "index"
             }
-          },
-          {
-            "id": "eb02c180f1346b32",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "modern-robot-sw/fleet-mgmt/로봇 관제 개요.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "로봇 관제 개요"
-            }
-          },
-          {
-            "id": "b783cae39f7bf970",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.11.5"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.11.5"
-            }
-          },
-          {
-            "id": "a8adfecfc6a5559d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "modern-robot-sw/slam/SLAM_for_Dummies_KR.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "SLAM_for_Dummies_KR"
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -225,53 +184,54 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a8adfecfc6a5559d",
+  "active": "b783cae39f7bf970",
   "lastOpenFiles": [
-    "modern-robot-sw/slam/slam 은 어떻게 하는가.md",
-    "modern-robot-sw/slam/SLAM_for_Dummies_KR.md",
+    "KoreanRevisedVersion/01창세기/창1.md",
+    "KoreanRevisedVersion/01창세기/창세기.md",
+    "index.md",
+    "Untitled.canvas",
+    "wikilinks.md",
+    "KoreanRevisedVersion/57빌레몬서/빌레몬서.md",
+    "KoreanRevisedVersion/57빌레몬서/몬1.md",
+    "KoreanRevisedVersion/57빌레몬서",
+    "KoreanRevisedVersion/13역대기상/역대기상.md",
+    "KoreanRevisedVersion/13역대기상/대상9.md",
+    "KoreanRevisedVersion/13역대기상/대상8.md",
+    "KoreanRevisedVersion/13역대기상/대상7.md",
+    "KoreanRevisedVersion/13역대기상/대상6.md",
+    "KoreanRevisedVersion/13역대기상/대상5.md",
+    "KoreanRevisedVersion/13역대기상/대상4.md",
+    "KoreanRevisedVersion/13역대기상/대상3.md",
+    "KoreanRevisedVersion/13역대기상/대상29.md",
+    "KoreanRevisedVersion/13역대기상/대상28.md",
+    "KoreanRevisedVersion/13역대기상/대상27.md",
+    "KoreanRevisedVersion/13역대기상/대상26.md",
+    "KoreanRevisedVersion/13역대기상/대상25.md",
+    "KoreanRevisedVersion/13역대기상/대상24.md",
+    "KoreanRevisedVersion/13역대기상/대상23.md",
+    "KoreanRevisedVersion/13역대기상/대상22.md",
+    "KoreanRevisedVersion/13역대기상/대상21.md",
+    "KoreanRevisedVersion/13역대기상/대상20.md",
+    "KoreanRevisedVersion/13역대기상/대상2.md",
+    "KoreanRevisedVersion/13역대기상/대상19.md",
+    "KoreanRevisedVersion/13역대기상",
+    "KoreanRevisedVersion/33미가",
+    "KoreanRevisedVersion/05신명기",
+    "KoreanRevisedVersion/65유다서",
+    "KoreanRevisedVersion/09사무엘상",
+    "KoreanRevisedVersion/40마태복음",
+    "KoreanRevisedVersion/29요엘",
+    "KoreanRevisedVersion/03레위기",
+    "KoreanRevisedVersion/04민수기",
+    "robot icon.png",
     "modern-robot-sw/images/20260125192102.png",
     "modern-robot-sw/images/20260125173441.png",
     "modern-robot-sw/images/20260125173113.png",
-    "modern-robot-sw/images",
-    "modern-robot-sw/fleet-mgmt/로봇관제-Mission.md",
-    "Excalidraw/fleet/FleetManagementExplained05.excalidraw.md",
     "Excalidraw/fleet/FleetManagementExplained05.excalidraw.light.svg",
     "Excalidraw/fleet/FleetManagementExplained05.excalidraw.dark.svg",
-    "Excalidraw/fleet/FleetManagementExplained04.excalidraw.md",
     "Excalidraw/fleet/FleetManagementExplained04.excalidraw.light.svg",
     "Excalidraw/fleet/FleetManagementExplained04.excalidraw.dark.svg",
     "Excalidraw/fleet/FleetManagementExplained03.excalidraw.light.svg",
-    "Excalidraw/fleet/FleetManagementExplained03.excalidraw.md",
-    "Excalidraw/fleet/FleetManagementExplained03.excalidraw.dark.svg",
-    "Excalidraw/fleet/FleetManagementExplained02.excalidraw.md",
-    "Excalidraw/fleet/FleetManagementExplained02.excalidraw.light.svg",
-    "Excalidraw/fleet/FleetManagementExplained01.excalidraw.md",
-    "Excalidraw/fleet",
-    "modern-robot-sw/fleet-mgmt/로봇관제-모니터링.md",
-    "modern-robot-sw/fleet-mgmt/로봇 관제 개요.md",
-    "modern-robot-sw/physical-ai/Physical AI.md",
-    "modern-robot-sw/ros/ROS 둘러보기.md",
-    "modern-robot-sw/Introduction.md",
-    "index.md",
-    "Excalidraw/Drawing-2026-01-03-13.02.00.excalidraw.md",
-    "modern-robot-sw/들어가기 전에.md",
-    "Excalidraw/FleetManagementExplained03.excalidraw.md",
-    "Excalidraw/FleetManagementExplained02.excalidraw.md",
-    "Excalidraw/FleetManagementExplained01.excalidraw.md",
-    "Untitled.md",
-    "modern-robot-sw/element-of-robot/1장- 로봇 공학 기초(작성중).md",
-    "Excalidraw",
-    "modern-robot-sw/humanoid/Humanoid.md",
-    "modern-robot-sw/humanoid",
-    "modern-robot-sw/ros",
-    "modern-robot-sw/cloud-robotics/Cloud Robotics 설계하기.md",
-    "modern-robot-sw/cloud-robotics",
-    "modern-robot-sw/fleet-mgmt/통합관제SW는 어떻게 만드는가.md",
-    "modern-robot-sw/slam",
-    "modern-robot-sw/mapf/Multi Agent Path Finding.md",
-    "modern-robot-sw/fleet-mgmt",
-    "modern-robot-sw/robot-map/Robot Map.md",
-    "modern-robot-sw/mapf",
-    "modern-robot-sw/robot-map"
+    "Excalidraw/fleet/FleetManagementExplained03.excalidraw.dark.svg"
   ]
 }
