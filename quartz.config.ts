@@ -89,10 +89,6 @@ const config: QuartzConfig = {
       Plugin.Static(),
       Plugin.Favicon(),
       Plugin.NotFoundPage(),
-      // Convert Excalidraw SVG to PNG for OG images (must run before CustomOgImages)
-      Plugin.ExcalidrawOgImage(),
-      // Comment out CustomOgImages to speed up build time
-      Plugin.CustomOgImages(),
     ],
   },
 }
